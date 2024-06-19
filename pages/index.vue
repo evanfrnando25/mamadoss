@@ -25,15 +25,15 @@
             }
 
             @media (max-width: 520px) {
-                padding: 50% 5%;
+                padding: 70% 5%;
             }
 
             @media (max-width: 450px) {
-                padding: 55% 5%;
+                padding: 75% 5%;
             }
 
             @media (max-width: 360px) {
-                padding: 70% 5%;
+                padding: 80% 5%;
             }
 
             @media (max-width: 320px) {
