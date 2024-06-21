@@ -63,6 +63,7 @@
         &__logo {
             img {
                 width: 120px;
+                cursor: pointer;
             }
         }
 
@@ -72,6 +73,15 @@
             color: $basic;
             font-weight: bold;
             margin-right: 8%;
+
+            span {
+                cursor: pointer;
+
+                &:hover {
+                    color: $primary;
+                    font-weight: bold !important;
+                }
+            }
 
             &__list {
                 display: none;
