@@ -110,7 +110,7 @@
         background-image: url('@/assets/img/bg-menu.png');
         background-size: cover;
         background-repeat: no-repeat;
-        padding: 10px;
+        padding: 50px 20px;
         display: flex;
         flex-direction: column;
         height: 100%;
