@@ -17,7 +17,7 @@
                             <Icon name="mdi:instagram" />
                         </span>
                         <span>
-                            <Icon name="ic:baseline-whatsapp" />
+                            <Icon name="mdi:twitter" />
                         </span>
                     </div>
                 </div>

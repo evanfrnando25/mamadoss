@@ -58,6 +58,17 @@
             <span>SEE ALL MENU</span>
         </div>
     </div>
+    <div class="contact">
+        <div class="contact__wrapper">
+            <div class="contact__greetings">
+                <h2>SEE YOU SOON!</h2>
+            </div>
+            <div class="contact__whatsapp">
+                <span><Icon name="ic:baseline-whatsapp" /></span>
+                <h5>081 234 567 890</h5>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script lang="ts">
@@ -346,6 +357,44 @@
                 &:hover {
                     opacity: 0.1;
                 }
+            }
+        }
+    }
+
+    .contact {
+        padding: 18% 15%;
+        text-align: center;
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &__greetings {
+            h2 {
+                font-weight: 700;
+                color: #0f2863;
+
+                @media (max-width: 768px) {
+                    font-size: 30px;
+                }
+            }
+        }
+
+        &__whatsapp {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            cursor: pointer;
+
+            svg {
+                font-size: 30px;
+            }
+
+            h5 {
+                font-weight: 700;
             }
         }
     }
