@@ -119,6 +119,7 @@
 <style lang="scss" scoped>
     .menu {
         background-image: url('@/assets/img/bg-menu.png');
+        background-attachment: fixed;
         background-size: cover;
         background-repeat: no-repeat;
         padding: 50px 20px;
@@ -146,6 +147,7 @@
         }
 
         &__list {
+            overflow-y: auto;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 5%;
@@ -268,10 +270,13 @@
     .banner {
         background-image: url('@/assets/img/banner.png');
         height: 100vh;
+        background-attachment: fixed;
+
         background-size: cover;
 
         &__wrapper {
             padding: 25% 8%;
+            overflow-y: auto;
 
             @media (max-width: 768px) {
                 padding: 40% 5%;
