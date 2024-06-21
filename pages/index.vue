@@ -276,7 +276,7 @@
 
         &__wrapper {
             padding: 25% 8%;
-            overflow-y: auto;
+            overflow-y: auto 2s;
 
             @media (max-width: 768px) {
                 padding: 40% 5%;
@@ -369,6 +369,10 @@
     .contact {
         padding: 18% 15%;
         text-align: center;
+
+        @media (max-width: 768px) {
+            padding: 30% 15%;
+        }
 
         &__wrapper {
             display: flex;
