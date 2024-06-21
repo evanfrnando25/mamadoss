@@ -234,6 +234,12 @@
                 @media (max-width: 768px) {
                     font-size: 12px;
                 }
+
+                &:hover {
+                    color: #ffed00;
+                    background: #332583;
+                    border: 1px solid #ffffff;
+                }
             }
         }
     }
