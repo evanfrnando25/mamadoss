@@ -271,8 +271,9 @@
         background-image: url('@/assets/img/banner.png');
         height: 100vh;
         background-attachment: fixed;
-
         background-size: cover;
+        --webkit-background-size: cover;
+        --moz-background-size: cover;
 
         &__wrapper {
             padding: 25% 8%;
