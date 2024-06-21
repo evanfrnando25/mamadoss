@@ -127,8 +127,11 @@
         flex-direction: column;
         height: 100%;
         gap: 50px;
+        --webkit-background-size: cover;
+        --moz-background-size: cover;
 
         @media (max-width: 768px) {
+            background-attachment: var(--webkit-background-size);
             padding: 50px 10px;
         }
 
@@ -274,6 +277,10 @@
         background-size: cover;
         --webkit-background-size: cover;
         --moz-background-size: cover;
+
+        @media (max-width: 768px) {
+            background-attachment: var(--webkit-background-size);
+        }
 
         &__wrapper {
             padding: 25% 8%;
