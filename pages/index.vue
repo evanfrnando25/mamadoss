@@ -230,6 +230,10 @@
                 font-size: 18px;
                 letter-spacing: 2px;
                 cursor: pointer;
+
+                @media (max-width: 768px) {
+                    font-size: 12px;
+                }
             }
         }
     }
