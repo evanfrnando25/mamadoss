@@ -58,6 +58,43 @@
             <span>SEE ALL MENU</span>
         </div>
     </div>
+    <div class="about">
+        <div class="about__wrapper">
+            <div class="about__picture">
+                <h1>ini picture</h1>
+            </div>
+            <div class="about__content">
+                <div class="about__content__wrapper">
+                    <div class="about__content__title">
+                        <h4>ABOUT US</h4>
+                    </div>
+                    <div class="about__content__description">
+                        Established in 2024, Mamod’ss aims to introduce the authentic flavors of the
+                        Middle East to Indonesia. Orginating from Lebanon, Mr. Mohamad Mroweh has
+                        delved into the FnB industry for over four years in Indonesia. Recognizing
+                        the need for top-quality, fresh ingredients, and genuine yet affordable
+                        Middle Eastern dishes in the country, Mamod’ss was born. <br /><br />
+                        With Mamod’ss, the essence of Lebanese culture is infused into each recipe,
+                        crafted with care by a Lebanese chef. It’s more than just about Shawarma,
+                        Biryani Rice, or Kunafeh; it’s Lebanon heart and soul. Mr. Mroweh believes
+                        that every Indonesian should have the opportunity to relish the real Middle
+                        Eastern cuisine made from premium fresh ingredients at an affordable price.
+                        Mamod’ss aims to bring Lebanon to you, saving you the journey of thousands
+                        of kilometers. <br />
+                        <br />
+                        Named after his cherished son, Mamod’ss embodies the same care and affection
+                        Mr. Mroweh has for anyone who enjoys eating good food. Just like a parent's
+                        wish for their child to savor good-natured, flavorful, and satisfying meals,
+                        Mamod’ss aims to make everyone’s moods with Mamod’ss. <br />
+                        <br />
+                        Bringing authentic Middle Eastern dishes to Kuningan City Mall, Batavia PIK,
+                        and more outlets to come, Mamod’ss invites you to experience the true
+                        essence of Lebanon with each bite.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="contact">
         <div class="contact__wrapper">
             <div class="contact__greetings">
@@ -370,6 +407,53 @@
                 &:hover {
                     opacity: 0.1;
                 }
+            }
+        }
+    }
+
+    .about {
+        background-image: url('@/assets/img/bg-about.png');
+        height: 120vh;
+        background-size: cover;
+
+        @media (max-width: 768px) {
+            height: 100%;
+        }
+
+        &__wrapper {
+            display: grid;
+            grid-template-columns: 40% 60%;
+
+            @media (max-width: 768px) {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        &__picture {
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+
+        &__content {
+            padding: 15% 10% 10% 5%;
+
+            &__wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+            }
+
+            &__title {
+                h4 {
+                    color: #ffed00;
+                    font-weight: bold;
+                }
+            }
+
+            &__description {
+                color: #ffed00;
+                font-weight: 400;
             }
         }
     }
